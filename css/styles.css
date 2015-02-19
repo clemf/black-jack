@@ -1,0 +1,6 @@
+.card-spot {
+  border: 2px solid;
+  min-height: 100px;
+  min-width: 75px;
+  display: inline-block;
+}
