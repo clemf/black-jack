@@ -36,3 +36,11 @@ var Deck = {
   }
 
 };
+
+var Hand = {
+  cards: [],
+
+  addCard: function(card) {
+    this.cards.push(card);
+  }
+}

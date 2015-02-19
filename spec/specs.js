@@ -29,3 +29,14 @@ describe('Deck', function() {
     expect(testDeck.deal()).to.eql(firstCard);
   });
 });
+
+describe('Hand', function() {
+
+  it('adds a card to the hand', function(){
+    var testHand = Object.create(Hand);
+    var testCard = {number: 1, suit: "hearts"};
+    testHand.addCard(testCard);
+    expect(testHand.cards).to.eql([testCard]);
+  });
+
+});
