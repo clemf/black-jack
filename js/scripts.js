@@ -21,6 +21,7 @@ var Deck = {
     });
     this.cards = genDeck;
   },
+
   shuffle: function() {
     for (var i = this.cards.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -28,6 +29,10 @@ var Deck = {
       this.cards[i] = this.cards[j];
       this.cards[j] = temp;
     }
+  },
+
+  deal: function() {
+    return this.cards.shift();
   }
 
 };
