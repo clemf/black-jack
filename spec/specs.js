@@ -38,5 +38,6 @@ describe('Hand', function() {
     testHand.addCard(testCard);
     expect(testHand.cards).to.eql([testCard]);
   });
+  it('')
 
 });

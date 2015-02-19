@@ -44,3 +44,19 @@ var Hand = {
     this.cards.push(card);
   }
 }
+
+$(document).ready(function() {
+  var gameDeck = Object.create(Deck);
+  gameDeck.generate();
+  gameDeck.shuffle();
+
+  var dealerHand = Object.create(Hand);
+
+  $("button#hit").click(function() {
+    dealerHand.addCard(gameDeck.deal());
+    $("#dealer1").text(dealerHand.cards[0].number + dealerHand.cards[0].suit);
+  });
+
+
+
+});
